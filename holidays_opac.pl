@@ -39,7 +39,8 @@ my ($template,$cookie)
                              flagsrequired => {tools => 'edit_calendar'},
                              debug => 1,
                            });
-my $branch="[your branch]";
+
+my $branch = $input->param('branch');
 
 # keydate - date passed to calendar.js.  calendar.js does not process dashes within a date.
 my $keydate;
